@@ -1,0 +1,65 @@
+package anuj_array_geeksforgeeks;
+
+public class LinkedListInsert {
+	Node head;
+	
+	class Node{
+		Node next;
+		int data;
+
+		Node (int data){
+			this.data=data;
+			this.next=null;
+		}
+	}
+	
+	
+	void insert(int data) {
+			Node newnode=new Node(data);
+			newnode.next=head;
+			head=newnode;
+		
+	}
+	
+	void insertPosition(int newdata,int position) {
+		Node temp=head;
+		int count=0;
+		Node newnode=new Node(newdata);
+		while(count<position) {
+			temp=temp.next;
+			count++;
+		}
+		Node x=temp.next;
+		x.next=newnode;
+		newnode=x;
+		
+	}
+	
+	
+	void printlist() {
+		Node temp=head;
+		while(temp.next!=null) {
+			System.out.println(temp.data);
+			temp=temp.next;
+		}
+		
+	}
+	
+	
+	
+	
+	
+	public static void main(String[] args) {
+		LinkedListInsert linkedlistinsert=new LinkedListInsert();
+		linkedlistinsert.insert(1);
+		linkedlistinsert.insert(2);
+		linkedlistinsert.insert(3);
+		linkedlistinsert.insert(4);
+		linkedlistinsert.insert(5);
+		
+		linkedlistinsert.printlist();
+		
+		LinkedListInsert.insertPosition(7,3);
+		
+	}
+}

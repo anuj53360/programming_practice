@@ -1,0 +1,15 @@
+package leetcode;
+
+public class SubArraySumEqualK {
+
+     public int subarraySum(int[] nums, int k) {
+		return k;
+        
+    }
+	
+	
+	public static void main(String[] args) {
+		
+	}
+		
+}

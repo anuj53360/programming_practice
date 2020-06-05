@@ -1,0 +1,12 @@
+package anuj_array_geeksforgeeks;
+
+public class RateInMaze {
+
+	public static void rateinMaze() {
+		
+	}
+	
+	public static void main(String[] args) {
+		
+	}
+}

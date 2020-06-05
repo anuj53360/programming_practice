@@ -1,0 +1,25 @@
+package leetcode.leetcode_LinkedList;
+
+public class RemoveNodeFromLastLinkedList {
+
+	class ListNode {
+		int val;
+		ListNode next;
+
+		public ListNode(int val) {
+			this.val = val;
+			next = null;
+		}
+	}
+
+	ListNode head;
+
+	public ListNode removeNthFromEnd(ListNode head, int n) {
+		return head;
+      
+	}
+
+	public static void main(String[] args) {
+     RemoveNodeFromLastLinkedList rnll=new RemoveNodeFromLastLinkedList();
+	}
+}

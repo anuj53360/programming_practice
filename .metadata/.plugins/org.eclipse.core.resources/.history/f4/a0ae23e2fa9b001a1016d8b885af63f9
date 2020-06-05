@@ -1,0 +1,19 @@
+package leetcode_mayChallenge;
+
+import java.util.HashMap;
+
+public class SortCharacterByFrequency {
+
+    public static String frequencySort(String s) {
+		HashMap<Character, Integer> map=new HashMap<>();
+    	
+    	
+    	
+    	return s;
+    }
+	
+	public static void main(String[] args) {
+		String s="bbAa";
+		frequencySort(s);
+	}
+}

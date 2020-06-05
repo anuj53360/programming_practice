@@ -1,0 +1,23 @@
+package linkedlist;
+
+public class LRUCacheImpl {
+
+	class Node{
+		int key;
+		int value;
+		Node prev;
+		Node next;
+		 public Node(int key,int value){
+			this.key=key;
+			this.value=value;
+			this.next=null;
+			this.prev=null;
+		}
+	}
+	
+	
+	
+	public static void main(String[] args) {
+		
+	}
+}

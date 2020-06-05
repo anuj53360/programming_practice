@@ -1,0 +1,25 @@
+package leetcode;
+
+public class ValidateBST {
+
+	class TreeNode{
+		int val;
+		TreeNode left;
+		TreeNode right;
+		public TreeNode(int val) {
+			this.val=val;
+			left=null;
+			right=null;
+		}
+	}
+
+	
+	
+	 public boolean isValidBST(TreeNode root) {
+	        
+	    }
+	
+	public static void main(String[] args) {
+		
+	}
+}

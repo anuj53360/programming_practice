@@ -1,0 +1,28 @@
+package linkedlist;
+
+public class LinkedListInsert {
+	
+	Node head;
+	
+	private class Node{
+		
+		int data;
+		Node next;
+		
+		public Node(int data) {
+		this.data=data;
+		this.next=null;
+		}
+		
+		public void insert(int a) {
+			Node node=new Node(a);
+		}
+	}
+	
+	public static void main(String[] args) {
+		
+		LinkedListInsert linkedlist=new LinkedListInsert();
+		linkedlist.insert(6);
+	}
+
+}

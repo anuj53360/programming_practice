@@ -1,0 +1,37 @@
+package leetcode_mayChallenge;
+
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.LinkedHashMap;
+import java.util.Map;
+import java.util.Map.Entry;
+import java.util.stream.Collectors;
+
+public class SortCharacterByFrequency {
+
+	public static String frequencySort(String s) {
+		HashMap<Character, Integer> map = new HashMap<>();
+		for (int i = 0; i < s.length(); i++) {
+			if (!map.containsKey(s.charAt(i))) {
+				map.put(s.charAt(i), 1);
+			} else {
+				map.put(s.charAt(i), map.get(s.charAt(i)) + 1);
+			}
+		}
+		
+		HashMap<Character, Integer> map1=map.entrySet() .stream()
+				.sorted(Collections.reverseOrder(Map.Entry.comparingByValue())) 
+				.collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue, (e1, e2) -> e2, LinkedHashMap::new));
+
+		for (Entry<Character, Integer> iterable : map1.entrySet()) {
+			System.out.println(iterable.getKey()+" "+iterable.getValue());
+		}
+
+		return s;
+	}
+
+	public static void main(String[] args) {
+		String s = "bbAa";
+		frequencySort(s);
+	}
+}

@@ -1,0 +1,131 @@
+package linkedlist;
+
+public class AddTwoNoLinkedList {
+
+	Node head;
+	
+	class Node{
+		
+		int data;
+		Node next;
+		Node(int data){
+			this.data=data;
+			Node next=null;
+		}
+	}
+
+	public void push(int data) {
+		Node new_node=new Node(data);
+		new_node.next=head;
+		head=new_node;
+	}
+	
+	public void printList(Node head) {
+		Node temp=head;
+		while(temp!=null) {
+			System.out.print(temp.data+" ");
+		temp=temp.next;
+		}
+	System.out.println( );	
+	}
+	
+
+	public  Node addTwoList(Node head1,Node head2) {
+      Node firstList=head1;
+      Node secondList=head2;
+      Node result;
+      Node temp = null;
+      Node next=null;
+      int sum=0;
+      int carry=0;
+      while(firstList!=null || secondList!=null) {
+    	  int x=0;
+    	  int y=0;
+    	  if(firstList!=null) {
+    		  x=firstList.data;
+    	  }else {
+    		  x=0;
+    	  }
+    	  
+    	  if(secondList!=null) {
+    		  y=secondList.data;
+    	  }else {
+    		  y=0;
+    	  }
+      sum=carry+x+y;
+      if(sum>=10) {
+    	  carry=1;
+      }else {
+    	  carry=0;
+      }
+      sum=sum%10;
+      
+      result=new Node(sum);
+		
+      if(temp==null) {
+    	  temp=result;
+      }else {
+    	  next.next=result;
+      }
+		next=result;
+
+		if(firstList!=null) {
+			firstList=firstList.next;
+		}
+		if(secondList!=null) {
+			secondList=secondList.next;
+		}
+
+		if(carry>0) {
+			result.next=new Node(carry);
+			
+		}
+      }
+		return temp;
+	}
+	
+	public Node reverse(Node head) {
+
+		Node next=null;
+		Node prev=null;
+		Node current=head;
+		
+		while(current!=null) {
+			next=current.next;
+			current.next=prev;
+			prev=current;
+			current=next;
+		}
+		head=prev;
+		return prev;
+	}
+	
+	public static void main(String[] args) {
+      AddTwoNoLinkedList addll= new AddTwoNoLinkedList();
+      addll.push(6);
+      addll.push(4);
+      addll.push(9);
+      addll.push(5);
+      addll.push(7);
+      AddTwoNoLinkedList addll1= new AddTwoNoLinkedList();
+      addll1.push(4);
+      addll1.push(8);
+     System.out.println("first list");
+    // addll.printList(addll.head);
+     Node firstreverse=addll.reverse(addll.head);
+     addll.printList(firstreverse);
+     
+     System.out.println("second  list");
+   //  addll1.printList(addll1.head);
+     Node secondreverse=addll.reverse(addll1.head);
+     addll1.printList(secondreverse);
+     
+     AddTwoNoLinkedList addll2= new AddTwoNoLinkedList();
+     Node rs =addll2. addTwoList(firstreverse, secondreverse);
+     Node resultreverse=addll.reverse(rs);
+     System.out.print("Resultant List is "); 
+     addll2.printList(resultreverse);
+		
+		
+	}
+}

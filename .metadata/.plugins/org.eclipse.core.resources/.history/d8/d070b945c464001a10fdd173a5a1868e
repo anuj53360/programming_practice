@@ -1,0 +1,29 @@
+
+package linkedlist;
+
+public class CloneLinkedList {
+	Node head;
+	
+	class Node{
+		int data;
+		Node next,random;
+		Node(int data){
+			this.data=data;
+			next=null;
+			random=null;
+		}
+	}
+	
+public void printList(Node head) {
+	 Node temp=null;
+	 while(temp!=null) {
+		 System.out.println(temp.data+" "+"Random data"+" "+temp.random.data);
+	 }
+}
+	
+	
+	
+	public static void main(String[] args) {
+		
+	}
+}

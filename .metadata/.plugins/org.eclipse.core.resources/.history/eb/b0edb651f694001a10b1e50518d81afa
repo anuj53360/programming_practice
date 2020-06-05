@@ -1,0 +1,12 @@
+package leetcode_mayChallenge;
+
+public class RemoveKDigit {
+
+    public static String removeKdigits(String num, int k) {
+        
+    }
+	
+	public static void main(String[] args) {
+		
+	}
+}

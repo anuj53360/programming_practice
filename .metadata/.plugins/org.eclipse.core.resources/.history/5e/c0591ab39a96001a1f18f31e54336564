@@ -1,0 +1,47 @@
+package leetcode_mayChallenge;
+
+public class MaxSumCircularSubArray {
+
+     public static int maxSubarraySumCircular(int[] A) {
+    	 int kadens=kadensalgo(A);
+    	 System.out.println(kadens);
+    	 int totalsum=0;
+    	 for (int i = 0; i < A.length; i++) {
+			totalsum+=A[i];
+		}
+    	 for (int i = 0; i < A.length; i++) {
+			A[i]=A[i]*(-1);
+		}
+    	 int minuskaddens=kadensalgo(A);
+    	 int sum=minuskaddens+totalsum;
+    	 if(sum>kadens && sum!=0) {
+    		 return sum;
+    	 }else {
+    		return kadens;
+    	 }
+    }
+     
+     
+     public static int kadensalgo(int[]array) {
+     int maxendinghere=array[0];
+     int maxsofar=array[0];
+         
+     for(int i=0;i<array.length;i++) {
+    	 maxendinghere+=array[i];
+    	 if(array[i]>maxendinghere) {
+    		 maxendinghere=array[i];
+    	 }
+    	 if(maxendinghere>maxsofar) {
+    		 maxsofar=maxendinghere;
+    	 }
+     }
+    	 return maxsofar;
+     }
+
+	public static void main(String[] args) {
+		int[] A= {3,-1,2,-1};
+		int x=maxSubarraySumCircular(A);
+	System.out.println(x);
+	}
+	
+}

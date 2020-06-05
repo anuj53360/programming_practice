@@ -1,0 +1,13 @@
+package hackerrank;
+
+public class AlternatingCharacter {
+
+	static int alternatingCharacters(String s) {
+
+
+    }
+	
+	public static void main(String[] args) {
+		
+	}
+}

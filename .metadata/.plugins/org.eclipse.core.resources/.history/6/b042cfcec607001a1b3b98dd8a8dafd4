@@ -1,0 +1,37 @@
+package linkedlist;
+
+//Linked List insert
+
+public class LinkedListInsert {
+	
+	Node head;
+	
+	private class Node{
+		
+		int data;
+		Node next;
+		
+		public Node(int data) {
+		this.data=data;
+		this.next=null;
+		}
+		
+	}
+	
+ 
+	//Insert Node as a first node and pointing to node
+	public void insert(int a) {
+		Node node=new Node(a);
+		node.next=head;//we are putting address of head to new node next
+		head=node;//here we are joining new node to head
+	}
+	
+	
+	
+	public static void main(String[] args) {
+		
+		LinkedListInsert linkedlist=new LinkedListInsert();
+		linkedlist.insert(6);
+	}
+
+}

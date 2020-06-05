@@ -1,0 +1,13 @@
+package leetcode;
+
+public class MoveZeroes {
+
+public void moveZeroes(int[] nums) {
+        
+    }
+	
+	public static void main(String[] args) {
+		int []nums= {};
+		moveZeroes(nums);
+	}
+}

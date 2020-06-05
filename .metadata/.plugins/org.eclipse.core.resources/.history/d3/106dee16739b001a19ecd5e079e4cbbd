@@ -1,0 +1,46 @@
+package leetcode;
+
+import java.util.Stack;
+
+public class BSTFromPreorder {
+
+	class TreeNode {
+		int val;
+		TreeNode left;
+		TreeNode right;
+
+		public TreeNode(int val) {
+			this.val = val;
+			left = null;
+			right = null;
+		}
+	}
+
+	
+
+	public TreeNode bstFromPreorder(int[] preorder) {
+              Stack<TreeNode> stack=new Stack<>();
+              
+             TreeNode root=new TreeNode(preorder[0]);
+		     for (int i = 1; i < preorder.length; i++) {
+				TreeNode temp=null;
+				
+				while(!stack.isEmpty() && stack.peek() > preorder[i]) {
+					stack.pop();
+				}
+		    	 
+		    	 
+			}
+              
+              
+              
+		
+		
+		return root;
+	}
+
+	public static void main(String[] args) {
+
+	}
+
+}

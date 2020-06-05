@@ -1,0 +1,41 @@
+package anuj_array_geeksforgeeks;
+
+public class NumberOfIsland {
+
+	public static int noOfIsland(int [][]array) {
+		int count=0;
+		for (int i = 0; i < array.length; i++) {
+			for (int j = 0; j < array[0].length; j++) {
+             		if(array[i][j]==1) {
+             			count+=noOfIslandUtil(i,j,array);
+             		}		
+			}
+		}
+	return count;
+	}
+	
+
+	public static int noOfIslandUtil(int i,int j,int [][]array){
+		if(i<0 || i>=array.length && j<0 || j>=array[i].length) {
+			
+			return 0;
+		}
+		array[i][j]=0;
+		noOfIslandUtil(i+1, j, array);
+		noOfIslandUtil(i-1, j, array);
+		noOfIslandUtil(i, j+1, array);
+		noOfIslandUtil(i, j-1, array);
+		
+		return 1;
+		
+	}
+	public static void main(String[] args) {
+		int [][]array={ { 1, 1, 0, 0, 0 }, 
+                { 0, 1, 0, 0, 1 }, 
+                { 1, 0, 0, 1, 1 }, 
+                { 0, 0, 0, 0, 0 }, 
+                { 1, 0, 1, 0, 1 } };
+		int count=noOfIsland(array);
+	System.out.println(count);
+	}
+}

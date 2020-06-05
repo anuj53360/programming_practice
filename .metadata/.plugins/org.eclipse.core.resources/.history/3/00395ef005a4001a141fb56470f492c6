@@ -1,0 +1,33 @@
+package binarytree;
+
+public class SearchInBST {
+
+	class TreeNode {
+		int val;
+		TreeNode left;
+		TreeNode right;
+
+		TreeNode(int val) {
+			left = null;
+			right = null;
+		}
+	}
+
+	TreeNode root;
+
+	public TreeNode searchBST(TreeNode root, int val) {
+
+		return root;
+	}
+
+	public static void main(String[] args) {
+		SearchInBST searchbst = new SearchInBST();
+		int val = 2;
+		searchbst.root = searchbst.new TreeNode(4);
+		searchbst.root.left = searchbst.new TreeNode(2);
+		searchbst.root.right = searchbst.new TreeNode(7);
+		searchbst.root.left.left = searchbst.new TreeNode(1);
+		searchbst.root.left.right = searchbst.new TreeNode(3);
+		searchbst.searchBST(searchbst.root, val);
+	}
+}

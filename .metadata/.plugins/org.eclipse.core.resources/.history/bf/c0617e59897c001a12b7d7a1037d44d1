@@ -1,0 +1,13 @@
+package anuj_array_geeksforgeeks;
+
+public class NextGreaterElement {
+
+	public static void nextGreaterElement() {
+		
+	}
+	
+	public static void main(String[] args) {
+		int []array= {11, 13, 21, 3};
+	     int arrlength=array.length;
+	}
+}

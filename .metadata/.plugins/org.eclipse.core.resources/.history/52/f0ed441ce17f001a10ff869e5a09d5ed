@@ -1,0 +1,14 @@
+package leetcode;
+
+public class PranthesisCheckerDay16 {
+
+	public static void pranthesisChecker() {
+		
+	}
+	
+	public static void main(String[] args) {
+      
+		String string="(*))";
+		pranthesisChecker(string);
+	}
+}

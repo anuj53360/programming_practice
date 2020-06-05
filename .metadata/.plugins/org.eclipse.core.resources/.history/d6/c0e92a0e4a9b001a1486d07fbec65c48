@@ -1,0 +1,12 @@
+package leetcode_mayChallenge;
+
+public class CountSquareSubMatrices {
+
+	public int countSquares(int[][] matrix) {
+
+	}
+
+	public static void main(String[] args) {
+
+	}
+}

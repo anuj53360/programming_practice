@@ -1,0 +1,24 @@
+package java_practice;
+
+import java.time.LocalDate;
+import java.util.LinkedHashMap;
+import java.util.TreeMap;
+import java.util.TreeSet;
+
+public class Main {
+
+	public static void main(String[] args) {
+//		Parent p=new Child();
+//		p.functionx(5);
+	
+		//LocalDate localdate=LocalDate.now();
+		//localdate.
+		
+		
+		
+		
+		TreeMap<Integer, Integer> tr=new TreeMap<>();
+	    LinkedHashMap<Integer, Integer> lhm=new LinkedHashMap<>(); 
+		TreeSet<Integer> ts=new TreeSet<>();
+	}
+}

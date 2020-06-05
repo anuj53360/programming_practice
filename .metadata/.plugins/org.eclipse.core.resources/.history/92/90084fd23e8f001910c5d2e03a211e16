@@ -1,0 +1,10 @@
+package programmingpractice_programs;
+
+public class SquareSubArray {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

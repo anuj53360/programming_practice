@@ -1,0 +1,21 @@
+package leetcode;
+
+public class PranthesisCheckerDay16 {
+
+	public static boolean pranthesisChecker(String string) {
+
+		if(string.length()==0) {
+			return true;
+		}
+		
+		
+		
+		return false;
+	}
+	
+	public static void main(String[] args) {
+      
+		String string="(*))";
+		pranthesisChecker(string);
+	}
+}

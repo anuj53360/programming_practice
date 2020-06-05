@@ -1,0 +1,32 @@
+package anuj_array_geeksforgeeks;
+
+public class LinkedListInsert {
+	Node head;
+	
+	class Node{
+		Node next;
+		int data;
+
+		Node (int data){
+			this.data=data;
+			this.next=null;
+		}
+	}
+	
+	
+	void insert(int data) {
+		
+		if(head==null) {
+			Node node=new Node(1);
+		}
+	}
+	
+	
+	public static void main(String[] args) {
+		LinkedListInsert linkedlistinsert=new LinkedListInsert();
+		linkedlistinsert.insert(1);
+		
+		
+		
+	}
+}

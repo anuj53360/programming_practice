@@ -1,0 +1,17 @@
+package leetcode;
+
+public class LongestSubStringWithoughtRepeatingChar {
+    
+	
+	public static int longestSubString(String string){
+		
+		
+		
+		return 0;
+	}
+	
+	public static void main(String[] args) {
+		String string="abcabcab";
+		longestSubString(string);
+	}
+}

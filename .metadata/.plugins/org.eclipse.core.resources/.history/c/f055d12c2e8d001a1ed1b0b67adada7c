@@ -1,0 +1,17 @@
+package anuj_array_geeksforgeeks;
+
+public class DictionaryProblemHackerearth {
+
+	public static void dictionaryProblemHackerearth(int n,int k){
+		
+		
+		
+		
+	}
+	
+	public static void main(String[] args) {
+		int n=3;
+		int k=51;
+		dictionaryProblemHackerearth(n,k);
+	}
+}

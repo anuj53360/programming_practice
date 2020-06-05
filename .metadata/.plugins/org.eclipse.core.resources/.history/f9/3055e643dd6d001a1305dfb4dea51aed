@@ -1,0 +1,19 @@
+package anuj_array_geeksforgeeks;
+
+public class DicimalToBinary {
+
+	
+	public static void dicimalToBinary(int number) {
+		while(number>0) {
+			
+			int x=number%2;
+			System.out.println(x);
+		}
+		
+		
+	}
+	public static void main(String[] args) {
+		int number=7;
+		dicimalToBinary(number);
+	}
+}

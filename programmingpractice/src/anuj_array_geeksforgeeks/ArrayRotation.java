@@ -1,0 +1,27 @@
+package anuj_array_geeksforgeeks;
+
+//Time complexity : O(n * d)
+
+public class ArrayRotation {
+
+	public static void arrayRoatationUtil(int[] array) {
+		
+		int temp = array[0], i = 0;
+		for (i = 0; i <= array.length - 1; i++) {
+			array[i] = array[i + 1];
+		}
+		array[i] = temp;
+	}
+
+	public static void arrayRotation(int[] array, int roatate) {
+		for (int i = 0; i <= roatate; i++) {
+			arrayRoatationUtil(array);
+		}
+	}
+
+	public static void main(String[] args) {
+		int[] array = { 1, 2, 3, 4, 5, 6, 7 };
+		int roatate = 2;
+		arrayRotation(array, roatate);
+	}
+}

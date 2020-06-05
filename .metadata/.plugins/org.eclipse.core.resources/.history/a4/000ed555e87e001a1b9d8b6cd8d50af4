@@ -1,0 +1,22 @@
+package anuj_array_geeksforgeeks;
+
+public class NumberFlipBinaryStringAlternate {
+
+	public static int binaryStringAlternateUtil(String str, char startingchar){
+		
+	}
+	
+	
+	
+	public static int binaryStringAlternate(String str) {
+		
+	return	Math.min(binaryStringAlternateUtil(str,'0') ,binaryStringAlternateUtil(str,'1'));
+	}
+	
+	public static void main(String[] args) {
+	
+		String str="0001010111";
+		binaryStringAlternate(str);
+	}
+	
+}

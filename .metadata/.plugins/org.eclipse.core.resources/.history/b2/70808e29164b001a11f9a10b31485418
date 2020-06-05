@@ -1,0 +1,25 @@
+package anuj_array_geeksforgeeks;
+
+public class SubArrayGivenSum {
+
+	public static void subArrayGivenSum(int []array,int sum) {
+		
+     for(int i=0;i<array.length;i++) {
+    	 
+    	 
+    	 for(int j=i+1;j<=array.length;j++) {
+    		 
+    	 }
+     }		
+		
+		
+		
+	}
+	
+	public static void main(String[] args) {
+		int []array= {15, 2, 4, 8, 9, 5, 10, 23};
+		int sum=23;
+		subArrayGivenSum(array,sum);
+		
+	}
+}

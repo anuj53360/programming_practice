@@ -1,0 +1,55 @@
+package linkedlist;
+
+//Linked List insert
+
+public class LinkedListInsert {
+	Node head;
+	
+	private class Node{
+		int data;
+		Node next;
+		public Node(int data) {
+		this.data=data;
+		this.next=null;
+		}
+	}
+ 
+	//Insert Node as a first node and pointing to node
+	public void insert(int a) {
+		Node node=new Node(a);
+		node.next=head;//we are putting address of head to new node next
+		head=node;//here we are joining new node to head
+	}
+	
+	//Insert a node after a given Node
+	public void insertAfter(Node prev_node,int new_data) {
+		if(prev_node==null) {
+			System.out.println("previous node can't be null");
+		}
+		Node new_node=new Node(new_data);
+		new_node.next=prev_node.next;
+		prev_node.next=new_node;
+	}
+	
+	//Insert a node at last
+	public void insertAtLast(int new_data) {
+		Node new_Node=new Node(new_data);
+		if(head==null) {
+			head=new Node(new_data);
+		}
+		new_Node.next=null;
+		Node last=head;
+		//we will iterate a list till we find a Node which next pointing to null
+		while(last.next!=null) {
+			last=last.next;
+		}
+		last.next=new_Node;
+	}
+	
+	
+	public static void main(String[] args) {
+		LinkedListInsert linkedlist=new LinkedListInsert();
+		linkedlist.insert(6);
+	}
+
+}

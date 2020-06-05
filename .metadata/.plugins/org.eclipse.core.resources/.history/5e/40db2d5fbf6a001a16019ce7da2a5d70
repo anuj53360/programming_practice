@@ -1,0 +1,44 @@
+package hackerrank;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+public class NonDivisibleSubSet {
+
+	public static int nonDivisibleSubset(int k, List<Integer> s) {
+		int []array=new int[s.size()];
+		int j=0;
+		for (int i : s) {
+         array[j]=i;			
+		j++;
+		}
+		int m=0;
+		int n=1;
+		  List<Integer> list=new ArrayList<>();
+		while(n!=array.length) {
+		int	sum=array[m]+array[n];
+	
+        			  ++m;
+			        ++n;
+			    	System.out.println(sum+" "+array[m]+" "+array[n]);		        
+			     if(sum%k!=0) {
+			    	 list.add(array[m]);
+			    	 list.add(array[n]);
+			     }   
+		  }
+     
+	for (Integer integer : list) {
+		//System.out.println(list+"QQQQQ");
+	}	
+		
+		
+		return k;
+	    }
+	
+	public static void main(String[] args) {
+		List<Integer> list=Arrays.asList(19,10,12,10,24,25,22);
+		int k=4;
+		nonDivisibleSubset(k,list);  
+	}
+}

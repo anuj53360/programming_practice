@@ -1,0 +1,39 @@
+package anuj_array_geeksforgeeks;
+
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.HashMap;
+import java.util.Map;
+
+public class Society {
+
+	public static void readingFile() throws IOException {
+		
+		File file=new File("C:\\Users\\anuj5\\OneDrive\\Desktop\\readingfile.txt");
+		BufferedReader bufferReader=new BufferedReader(new FileReader(file));
+		
+		String line;  
+		HashMap<String, Integer> map=new HashMap<>();
+		while((line=bufferReader.readLine())!=null)  
+		{  
+		
+		}
+		bufferReader.close();      
+//		System.out.println(sb.toString());
+		
+		
+		
+		
+	}
+	
+	
+	public static void main(String[] args) throws IOException {
+		
+		readingFile();
+		
+		
+	}
+}

@@ -1,0 +1,34 @@
+package programmingpractice_programs;
+
+import java.util.Arrays;
+
+public class SquareSubArray {
+
+	
+public static int[] sortedSquares(int[] A) {
+	
+	 int length =A.length;
+	 
+	 
+	
+	 
+	for(int i=0;i<length;i++) {
+		int square=Math.abs(A[i])*Math.abs(A[i]);
+		System.out.println(square);
+		}
+	
+	
+	return A;
+        }
+	
+	public static void main(String[] args) {
+	        
+     int [] array= {-7,-3,2,3,11};
+     
+    sortedSquares(array);
+		
+		
+		
+	}
+
+}

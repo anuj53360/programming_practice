@@ -1,0 +1,15 @@
+package leetcode;
+
+public class TwoSum {
+
+	
+public int[] twoSum(int[] nums, int target) {
+        
+    }
+	
+	public static void main(String[] args) {
+		int[] nums= {};
+		int target=;
+		twoSum(nums,target);
+	}
+}

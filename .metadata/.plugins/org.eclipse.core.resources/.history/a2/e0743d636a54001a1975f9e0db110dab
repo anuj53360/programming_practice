@@ -1,0 +1,13 @@
+package anuj_array_geeksforgeeks;
+
+public class PhythorgianTriplet {
+
+	public static void phythorgianTriplet() {
+		
+	}
+	
+	public static void main(String[] args) {
+		int []array= { 3, 1, 4, 6, 5 };
+		phythorgianTriplet(array);
+	}
+}

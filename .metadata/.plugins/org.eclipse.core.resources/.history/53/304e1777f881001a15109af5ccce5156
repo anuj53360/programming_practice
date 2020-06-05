@@ -1,0 +1,21 @@
+package anuj_array_geeksforgeeks;
+
+public class RateInMaze {
+
+	public static boolean rateinMaze(int [][]grid) {
+		int n=grid.length;
+      int [][]sol=new int[n][n];		
+		
+		if(solvemazeUtil(grid,0,0,sol)==false) {
+			System.out.println("no path exist");
+		}
+	}
+	
+	public static void main(String[] args) {
+		int [][]grid= { { 1, 0, 0, 0 }, 
+                { 1, 1, 0, 1 }, 
+                { 0, 1, 0, 0 }, 
+                { 1, 1, 1, 1 }};
+		rateinMaze(grid);
+	}
+}

@@ -1,0 +1,20 @@
+package java_practice;
+
+public class Parent {
+
+	public Parent functionx(int n) {
+		return null;
+		
+	}
+	
+}
+
+
+class Child extends Parent{
+	public Parent functionx(int n) {
+		return null;
+	}	
+}
+
+
+

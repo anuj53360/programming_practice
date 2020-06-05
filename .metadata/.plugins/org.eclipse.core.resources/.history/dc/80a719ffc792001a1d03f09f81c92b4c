@@ -1,0 +1,27 @@
+package leetcode;
+
+import java.util.PriorityQueue;
+
+public class LastStoneWeight {
+
+	
+	 public static int lastStoneWeight(int[] stones) {
+	        
+		 PriorityQueue<Integer> pq=new PriorityQueue<>();
+		 for (int i = 0; i < stones.length; i++) {
+			pq.add(stones[i]);
+		}
+		 
+		 System.out.println(pq.peek());
+		 for (Integer integer : pq) {
+			System.out.println(integer);
+		}
+		 
+		 return 0;
+	    }
+	
+	public static void main(String[] args) {
+		int[] stones= {2,7,4,1,8,1};
+		lastStoneWeight(stones);
+	}
+}

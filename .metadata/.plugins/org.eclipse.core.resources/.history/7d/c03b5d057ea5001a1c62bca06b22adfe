@@ -1,0 +1,22 @@
+package binarytree;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class UniqueBinarySearchTree {
+
+	public static int numTrees(int n) {
+
+		Map<Integer, Integer> map = new HashMap<>();
+		map.put(0, 1);
+		map.put(1, 1);
+
+		return n;
+	}
+
+	public static void main(String[] args) {
+		int n = 5;
+		numTrees(n);
+
+	}
+}

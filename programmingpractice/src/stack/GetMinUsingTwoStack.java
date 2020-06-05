@@ -1,0 +1,112 @@
+package stack;
+
+public class GetMinUsingTwoStack {
+	final int MAX=Integer.MAX_VALUE;       
+	int []array=new int[MAX];
+	int []min=new int[MAX];
+	int arraytop=-1;
+	int mintop=-1;
+	
+	void push(int data) {
+		//System.out.println(data);
+		   if(arraytop>=MAX-1 || mintop> MAX-1) {
+			   System.out.println("stack is full");
+		   }
+		   if(arraytop==-1 && mintop==-1 ) {
+           min[++mintop]=data;
+           array[++arraytop]=data;
+          //System.out.println(array[arraytop]+" "+min[mintop]);
+		   }
+		   else {
+			   int element=minpeak();
+			 //  System.out.println(element);
+			   if(data>element) {
+				   min[++mintop]=element;
+			   }else {
+				   min[++mintop]=data;
+			   }
+		   array[++arraytop]=data;
+		   }
+		   
+//		   for (int i = 0; i < array.length; i++) {
+//			System.out.println(array[i]);
+//		}
+	}
+	
+	int arraypeak() {
+		if(arraytop==-1 ) {
+			System.out.println("stack is empty");
+		}else {
+			int element=array[arraytop];
+			return element;
+		}
+		return 0;
+	}
+
+int minpeak() {
+		if(mintop==-1) {
+			System.out.println("stack is empty");
+		}else {
+			int element=min[mintop];
+			return element;
+		}
+		return 0;
+	}
+
+boolean isEmpty() {
+	if(arraytop ==-1 && mintop==-1) {
+		return true;
+	}else {
+		return false;
+	}
+}
+
+
+int arraypop() {
+	if(arraytop==-1) {
+		System.out.println("stack is Empty");
+	}
+	else {
+		int element=array[arraytop];
+         arraytop--;
+         return element;
+	}
+	return 0;
+}
+
+int minpop() {
+	if(mintop==-1) {
+		System.out.println("stack is Empty");
+	}
+	else {
+		int element=min[mintop];
+         mintop--;
+         return element;
+	}
+	return 0;
+}
+   
+int getmin() {
+	if(mintop==-1) {
+		System.out.println("stack is empty");
+	}else {
+		int element=min[mintop];
+		return element;
+	}
+	return 0;
+}
+
+public static void main(String[] args) {
+	GetMinUsingTwoStack getmin=new GetMinUsingTwoStack();
+	int []array1= {18,19,29,15,16};	
+	for(int i=0;i<array1.length;i++) {
+		getmin.push(array1[i]);
+	}
+	System.out.println(getmin.getmin());
+	getmin.arraypop();
+	getmin.arraypop();
+	getmin.minpop();
+	getmin.minpop();
+	System.out.println(getmin.getmin());
+	}
+}

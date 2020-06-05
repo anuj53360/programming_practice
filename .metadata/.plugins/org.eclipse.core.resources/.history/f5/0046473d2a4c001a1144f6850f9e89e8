@@ -1,0 +1,29 @@
+package anuj_array_geeksforgeeks;
+
+public class LinkedListInsert {
+	Node head;
+	
+	class Node{
+		Node next;
+		int data;
+
+		Node (Node next,int data){
+			next=null;
+			data=this.data;
+		}
+	}
+	
+	
+	void insert() {
+		
+	}
+	
+	
+	public static void main(String[] args) {
+		LinkedListInsert linkedlistinsert=new LinkedListInsert();
+		linkedlistinsert.
+		
+		
+		
+	}
+}

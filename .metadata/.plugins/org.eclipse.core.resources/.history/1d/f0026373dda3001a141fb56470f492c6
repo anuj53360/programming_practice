@@ -1,0 +1,13 @@
+package hackerrank;
+
+public class GamesOfThrones1 {
+
+	static String gameOfThrones(String s) {
+
+		return s;
+	}
+
+	public static void main(String[] args) {
+
+	}
+}

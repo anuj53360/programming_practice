@@ -1,0 +1,15 @@
+package anuj_array_geeksforgeeks;
+
+public class NumberFlipBinaryStringAlternate {
+
+	public static void binaryStringAlternate(String str) {
+		
+	}
+	
+	public static void main(String[] args) {
+	
+		String str="0001010111";
+		binaryStringAlternate(str);
+	}
+	
+}

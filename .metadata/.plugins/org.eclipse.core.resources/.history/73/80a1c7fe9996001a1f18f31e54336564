@@ -1,0 +1,39 @@
+package leetcode_mayChallenge;
+
+public class MaxSumCircularSubArray {
+
+     public static int maxSubarraySumCircular(int[] A) {
+		
+    	 int totalsum=0;
+    	 for (int i = 0; i < A.length; i++) {
+			totalsum+=A[i];
+		}
+    	 
+    	 
+    	 
+    	 return 0;
+    }
+     
+     
+     public static int kadensalgo(int[]array) {
+     int maxendinghere=array[0];
+     int maxsofar=array[0];
+         
+     for(int i=0;i<array.length;i++) {
+    	 maxendinghere+=maxendinghere;
+    	 if(array[i]>maxendinghere) {
+    		 maxendinghere=array[i];
+    	 }
+    	 if(maxendinghere>maxsofar) {
+    		 maxsofar=maxendinghere;
+    	 }
+     }
+    	 return maxsofar;
+     }
+
+	public static void main(String[] args) {
+		int[] A= {3,-1,2,-1};
+		maxSubarraySumCircular(A);
+	}
+	
+}

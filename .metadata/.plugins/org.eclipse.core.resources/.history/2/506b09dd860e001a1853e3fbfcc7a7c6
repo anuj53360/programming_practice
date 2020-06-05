@@ -1,0 +1,31 @@
+package linkedlist;
+
+import java.util.HashMap;
+
+public class LRUCacheImpl {
+
+	class Node{
+		int key;
+		int value;
+		Node prev;
+		Node next;
+		 public Node(int key,int value){
+			this.key=key;
+			this.value=value;
+			this.next=null;
+			this.prev=null;
+		}
+	}
+	HashMap<Integer, Node> hasMap;
+	Node start;
+	Node end;
+	cache_size=5;
+
+	LRUCacheImpl(){
+		hasMap=new HashMap<>();
+	}
+	
+	public static void main(String[] args) {
+		
+	}
+}

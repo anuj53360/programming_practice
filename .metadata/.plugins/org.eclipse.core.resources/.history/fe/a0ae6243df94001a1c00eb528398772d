@@ -1,0 +1,31 @@
+package leetcode;
+
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Queue;
+
+public class LevelOrderTraversalBinartTree {
+
+	class TreeNode{
+		int val;
+		TreeNode left;
+		TreeNode right;
+	   public TreeNode(int val) {
+		left=null;
+		right=null; 
+	}
+	
+	}
+	
+     public List<List<Integer>> levelOrder(TreeNode root) {
+          Queue<Integer> queue=new LinkedList<Integer>();          
+    	 
+    	 
+    	 return null;
+    }
+	   
+	
+	public static void main(String[] args) {
+		
+	}
+}

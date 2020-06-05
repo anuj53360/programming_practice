@@ -1,0 +1,43 @@
+package leetcode_mayChallenge;
+
+public class KthSmallestElement {
+
+	class TreeNode {
+		int val;
+		TreeNode left;
+		TreeNode right;
+
+		public TreeNode(int val) {
+			this.val = val;
+			left = null;
+			right = null;
+
+		}
+	}
+
+	TreeNode root;
+
+	public void kthSmallest(TreeNode root) {
+
+		//return k;
+	}
+
+	public static void main(String[] args) {
+		KthSmallestElement smallest = new KthSmallestElement();
+         smallest.root=smallest.new TreeNode(5);
+         smallest.root.left=smallest.new TreeNode(3);
+         smallest.root.left.left=smallest.new TreeNode(2);
+         smallest.root.left.left.left=smallest.new TreeNode(1);
+         smallest.root.left.right=smallest.new TreeNode(4);
+         smallest.root.right=smallest.new TreeNode(5);
+         
+         
+         
+		
+		
+		
+		
+				
+		
+	}
+}

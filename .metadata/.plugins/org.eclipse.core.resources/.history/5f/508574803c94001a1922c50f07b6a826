@@ -1,0 +1,34 @@
+package leetcode;
+
+import leetcode.MergeTwoLinkedList.ListNode;
+
+public class PalindromeLinkedList {
+
+	class ListNode{
+		int val;
+		ListNode next;
+		public ListNode(int val) {
+			this.val=val;
+			next=null;
+		}
+	}
+	ListNode head;
+	
+	public void insert(int data) {
+		ListNode new_node=new ListNode(data);
+	    new_node.next=head;
+       head=new_node;	
+	}
+	
+	public void printList() {
+		ListNode temp=head;
+		while(temp!=null) {
+			System.out.print(temp.val);
+			temp=temp.next;
+		}
+	}
+	
+	public static void main(String[] args) {
+		
+	}
+}

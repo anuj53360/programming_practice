@@ -1,0 +1,31 @@
+package leetcode;
+
+public class LongestSubStringWithoughtRepeatingChar {
+    
+	
+	public static int longestSubString(String string){
+		int []intarray=new int[26];
+		String result="";
+		int i=0;
+		int j=0;
+		while(i<string.length() && j<string.length()) {
+			if(intarray[string.charAt(i)-'a']==0) {
+				//System.out.println(intarray[string.charAt(i)-'a']);
+			result+=string.charAt(i);
+			System.out.println(result);
+			intarray[string.charAt(i)-'a']+=1;
+			}else {
+				intarray[string.charAt(i)-'a']+=1;
+				j++;
+			result="";
+			}
+			i++;
+		}
+		return 0;
+	}
+	
+	public static void main(String[] args) {
+		String string="pwwkew";
+		longestSubString(string);
+	}
+}

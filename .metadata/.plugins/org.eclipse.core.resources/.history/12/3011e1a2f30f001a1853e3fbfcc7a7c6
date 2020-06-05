@@ -1,0 +1,25 @@
+package linkedlist;
+
+public class SegregateEvenOdd {
+
+	
+	
+	
+	
+	
+	public static void main(String[] args) {
+	
+		
+		SegregateEvenOdd llist = new SegregateEvenOdd(); 
+	        llist.push(11); 
+	        llist.push(10); 
+	        llist.push(8); 
+	        llist.push(6); 
+	        llist.push(4); 
+	        llist.push(2); 
+	        llist.push(0); 
+	        System.out.println("Origional Linked List"); 
+	        llist.printList(); 
+	}
+	
+}

@@ -1,0 +1,21 @@
+package leetcode;
+
+import java.util.HashMap;
+
+public class SubArraySumEqualK {
+
+	public static int subarraySum(int[] nums, int k) {
+	    HashMap<Integer, Integer> map=new HashMap<>();  
+		
+		
+		
+		return k;
+	}
+
+	public static void main(String[] args) {
+		int[] nums= {3,4,7,2,-3,1,4,2};
+	     int k=7;
+		subarraySum(nums,k);
+	}
+
+}

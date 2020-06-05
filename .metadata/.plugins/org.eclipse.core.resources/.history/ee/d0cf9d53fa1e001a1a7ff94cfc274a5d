@@ -1,0 +1,14 @@
+package programmingpractice_programs;
+
+public class HashCode {
+
+	
+	
+	public static void main(String[] args) {
+		
+		String s="loki";
+		
+		int x=s.hashCode();
+		String s1=String.valueOf(x);
+	}
+}

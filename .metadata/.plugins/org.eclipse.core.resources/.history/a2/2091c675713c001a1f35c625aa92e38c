@@ -1,0 +1,16 @@
+package java_practice;
+
+public class Practice {
+
+	public static void main(String[] args) {
+		
+		boolean variable=false;
+		
+		while(variable) {
+			System.out.println("AAA");
+		}
+		
+		
+		
+	}
+}

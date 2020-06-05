@@ -1,0 +1,26 @@
+package leetcode;
+
+public class PlusOne {
+
+	 public static int[] plusOne(int[] digits) {
+	        int []array=new int[digits.length];
+	             StringBuffer sb=new StringBuffer();
+	         for(int i=0;i<digits.length;i++){
+	             if(i==digits.length-1){
+	                 sb.append(digits[i]+1);
+	             }
+	    else{         
+	             sb.append(digits[i]);
+	         }
+	             }
+	    
+	    System.out.println(sb);
+	    
+	    return array;
+	    }
+	
+	public static void main(String[] args) {
+		int[] digits= {4,3,2,1};
+		plusOne(digits);
+	}
+}

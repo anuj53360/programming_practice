@@ -1,0 +1,14 @@
+package leetcode_mayChallenge;
+
+public class SortCharacterByFrequency {
+
+    public static String frequencySort(String s) {
+		
+    	return s;
+    }
+	
+	public static void main(String[] args) {
+		String s="bbAa";
+		frequencySort(s);
+	}
+}

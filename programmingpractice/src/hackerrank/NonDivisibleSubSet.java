@@ -1,0 +1,54 @@
+package hackerrank;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
+
+public class NonDivisibleSubSet {
+
+	public static int nonDivisibleSubset(int k, List<Integer> s) {
+//		int []array=new int[s.size()];
+//		int j=0;
+//		for (int i : s) {
+//         array[j]=i;			
+//		j++;
+//		}
+//		  List<Integer> list=new ArrayList<>();
+//for (int i = 0; i <array.length; i++) {
+//	for (int l = i+1; l < array.length; l++) {
+//		int sum=array[i]+array[l];
+//		//System.out.println(sum+" "+array[i]+" "+array[l]);	        
+//	     if(sum%k!=0) {
+//	    	 list.add(array[i]);
+//	    	 list.add(array[l]);
+//	     }
+//	}
+//}		
+//    Set<Integer> set=new HashSet<>(list);
+		
+		int []frequency=new int[k];
+		
+		for (int i = 0; i < s.size(); i++) {
+		     frequency[s.get(i)%k]++;
+		}
+         
+		if(k%2==0) {
+			frequency[k/2]=Math.min(frequency[k/2], 1);
+		}
+		int res=Math.min(frequency[0], 1);
+      
+		for (int i = 1; i <=k/2; i++) {
+			res+=Math.max(frequency[i], frequency[k-i]);
+		}
+//		System.out.println(res);
+		return res;
+	    }
+	
+	public static void main(String[] args) {
+		List<Integer> list=Arrays.asList(19,10,12,10,24,25,22);
+		int k=4;
+		nonDivisibleSubset(k,list);  
+	}
+}

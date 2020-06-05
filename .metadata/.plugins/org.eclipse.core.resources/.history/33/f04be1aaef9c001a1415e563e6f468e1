@@ -1,0 +1,15 @@
+package leetcode_mayChallenge;
+
+public class IntervalListIntersaction {
+
+	public static int[][] intervalIntersection(int[][] A, int[][] B) {
+		return B;
+
+	}
+
+	public static void main(String[] args) {
+		int[][] A= {{0,2},{5,10},{13,23},{24,25}}; 
+		int[][] B= {};
+		intervalIntersection(A,B);
+	}
+}

@@ -1,0 +1,26 @@
+package linkedlist;
+
+public class LinkedlistDelete {
+	Node head;
+	
+	private class Node{
+		int data;
+		Node next;
+		public Node(int data) {
+		this.data=data;
+		Node next=null;
+		}
+	}
+	
+	
+	public void deleteNode(int key) {
+		
+		
+	}
+	
+	
+	public static void main(String[] args) {
+		
+		LinkedlistDelete linkedList=new LinkedlistDelete();
+	}
+}

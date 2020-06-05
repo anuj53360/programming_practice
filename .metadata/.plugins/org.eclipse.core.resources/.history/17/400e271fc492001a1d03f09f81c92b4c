@@ -1,0 +1,14 @@
+package leetcode;
+
+public class LastStoneWeight {
+
+	
+	 public static int lastStoneWeight(int[] stones) {
+	        
+	    }
+	
+	
+	public static void main(String[] args) {
+		
+	}
+}

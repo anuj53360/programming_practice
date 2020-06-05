@@ -1,0 +1,54 @@
+package hackerrank;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class ServiceLane {
+
+	public static int[] serviceLane(int n,int []width,int [][]cases){
+//        int x=0;
+//        int i=0;
+//        int j=0;
+	//	while(x<cases.length) {
+        	//System.out.println(cases[0][1]);
+        //	i++;j++;
+        	//x++;
+        //}
+        	int i=0;
+        	int j=0;
+        	int l=0;
+        	int m=1;
+        	int s=0;
+        	List<Integer> list=new ArrayList<>();
+        	int []array=new int[n];
+        	
+        	while (i<cases.length && l<cases.length) {
+        		int min=Integer.MAX_VALUE;
+				int x=cases[i++][j];
+				int y=cases[l++][m];
+				//System.out.println(x+" "+y);
+        	for (int p = x; p <=y; p++) {
+			if(width[p]<min) 
+				min=width[p];
+			
+        	}
+        	array[s]=min;
+        	s++;
+        	}
+        	
+		//System.out.println(cases.length);
+		
+		for (int k = 0; k <array.length; k++) {
+			System.out.println(array[k]);
+		}
+		
+		return array;
+	}
+	
+	public static void main(String[] args) {
+	int n=5;
+	int []width= {2,3,1,2,3,2,3,3};
+	int [][]cases= {{0,3},{4,6},{6,7},{3,5},{0,7}};
+	serviceLane(n,width,cases);
+	}
+}

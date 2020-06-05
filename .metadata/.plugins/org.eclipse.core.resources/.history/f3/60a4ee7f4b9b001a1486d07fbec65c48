@@ -1,0 +1,22 @@
+package leetcode_mayChallenge;
+
+import java.util.Arrays;
+
+public class CountSquareSubMatrices {
+
+	public static int countSquares(int[][] matrix) {
+		     
+		int [][]squarematrix=new int[matrix.length+1][matrix[0].length+1];
+		Arrays.fill(squarematrix, 0);
+		
+		
+		return 0;
+	}
+
+	public static void main(String[] args) {
+		int[][] matrix= {{1,0,1},
+				  {1,1,0},
+				  {1,1,0}};
+		countSquares(matrix);
+	}
+}

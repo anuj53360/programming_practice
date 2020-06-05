@@ -1,0 +1,21 @@
+package binarytree;
+
+public class SearchInBST {
+
+	class TreeNode{
+		int val;
+		TreeNode left;
+		TreeNode right;
+		TreeNode(int val){
+			left=null;
+			right=null;
+		}
+	}
+	TreeNode root;
+	
+	
+	
+	public static void main(String[] args) {
+		
+	}
+}
