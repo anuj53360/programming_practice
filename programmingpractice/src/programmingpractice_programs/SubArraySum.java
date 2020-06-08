@@ -1,0 +1,29 @@
+package programmingpractice_programs;
+
+public class SubArraySum {
+
+	public void subArraySumBruteForce(int[] arr, int sum) {
+		l1: for (int i = 0; i < arr.length; i++) {
+			int currsum = arr[i];
+			for (int j = i + 1; j < arr.length; j++) {
+				currsum += arr[j];
+				System.out.println(currsum);
+				if (currsum == sum) {
+					System.out.println(i + " " + j);
+					break l1;
+				}
+			}
+		}
+	}
+
+	public void subArraySumSlidingWindow(int[] arr, int sum) {
+
+	}
+
+	public static void main(String[] args) {
+		int[] array = { 1, 4, 20, 3, 10, 5 };
+		int sum = 33;
+		SubArraySum sub = new SubArraySum();
+		sub.subArraySumBruteForce(array, sum);
+	}
+}
