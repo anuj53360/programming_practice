@@ -1,0 +1,14 @@
+package anuj_array_geeksforgeeks;
+
+public class NQueenProblem {
+	static int N = 4;
+
+	public boolean nQueenProblem() {
+
+		return true;
+	}
+
+	public static void main(String[] args) {
+		int[][] matrix = { { 0, 0, 0, 0 }, { 0, 0, 0, 0 }, { 0, 0, 0, 0 }, { 0, 0, 0, 0 }};
+	}
+}

@@ -1,0 +1,31 @@
+package anuj_array_geeksforgeeks;
+
+public class NQueenProblem {
+	static final int N = 4;
+
+	public  boolean nQueenProblem(int[][] matrix, int col) {
+		if (col >= N)
+			return true;
+          
+		for(int i=0;i<N;i++) {
+			if(isSafe(matrix,i,col)) {
+				retrun true;
+			if(nQueenProblem(matrix, col+1)==true)
+				retrun true;
+
+			matrix[i][col]=0;
+			
+			}}
+		return false;
+	}
+
+	private static boolean isSafe(int[][] matrix, int row, int col) {
+
+		return false;
+	}
+
+	public static void main(String[] args) {
+		int[][] matrix = { { 0, 0, 0, 0 }, { 0, 0, 0, 0 }, { 0, 0, 0, 0 }, { 0, 0, 0, 0 } };
+		nQueenProblem(matrix);
+	}
+}

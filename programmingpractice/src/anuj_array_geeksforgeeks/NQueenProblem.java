@@ -1,0 +1,57 @@
+package anuj_array_geeksforgeeks;
+
+public class NQueenProblem {
+	static final int N = 4;
+
+	public static boolean nQueenProblem(int[][] matrix, int col) {
+		if (col >= N)
+			return true;
+
+		for (int i = 0; i < N; i++) {
+			if (isSafe(matrix, i, col)) {
+				matrix[i][col] = 1;
+				nQueenProblem(matrix, col + 1);
+
+				matrix[i][col] = 0;
+			}
+		}
+		return false;
+	}
+
+	private static boolean isSafe(int[][] matrix, int row, int col) {
+		int i, j;
+		for (i = 0; i < col; i++)
+			if (matrix[row][col] == 1)
+				return false;
+
+		for (i = row, j = col; i >= 0 && j >= 0; i--, j--)
+			if (matrix[i][j] == 1)
+				return false;
+
+		for (i = row, j = col; i < N && j >= 0; i++, j--)
+			if (matrix[i][j] == 1)
+				return false;
+
+		return true;
+	}
+
+	public static void main(String[] args) {
+		int[][] matrix = { { 0, 0, 0, 0 }, { 0, 0, 0, 0 }, { 0, 0, 0, 0 }, { 0, 0, 0, 0 } };
+		if (nQueenProblem(matrix, 0) == false) {
+			System.out.println("not possible to place Queen in matrix");
+		} else {
+			printMatrix(matrix);
+		}
+
+	}
+
+	private static void printMatrix(int[][] matrix) {
+		for (int i = 0; i < matrix.length; i++) {
+			for (int j = 0; j < matrix[i].length; j++) {
+				System.out.println(matrix[i][j]);
+			}
+
+		}
+
+	}
+}

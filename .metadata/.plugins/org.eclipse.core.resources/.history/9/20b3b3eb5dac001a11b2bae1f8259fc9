@@ -1,0 +1,21 @@
+package anuj_array_geeksforgeeks;
+
+public class NQueenProblem {
+	static final int N = 4;
+
+	public static boolean nQueenProblem(int [][]matrix,int col) {
+              
+		if(col>=N)
+			return true;
+		
+		
+		
+		
+		return true;
+	}
+
+	public static void main(String[] args) {
+		int[][] matrix = { { 0, 0, 0, 0 }, { 0, 0, 0, 0 }, { 0, 0, 0, 0 }, { 0, 0, 0, 0 } };
+		nQueenProblem(matrix);
+	}
+}
