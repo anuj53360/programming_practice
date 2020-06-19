@@ -1,0 +1,21 @@
+package anuj_array_geeksforgeeks;
+
+public class SmallestSubArray {
+//find smallest subarray with greater than given sum
+	
+	
+	public static void smallestSubArray(int []array,int sum) {
+		
+		
+		
+		
+		
+	}
+	
+	
+	public static void main(String[] args) {
+		int []array= {1,4,45,6,10,19};
+		int sum=51;
+		smallestSubArray(array,sum);
+	}
+}

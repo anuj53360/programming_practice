@@ -70,12 +70,12 @@ public class SubArrayGivenSum {
 	}
 
 	public static void main(String[] args) {
-		 int[] array = { 15, 2, 4, 8, 9, 5, 10, 23 };
+		 int[] array = { 15, 2, 4, 8, 9, 5, 10 };
 		//int[] array = { 10, 2, -2, -20, 10 };
 		//int sum = -10;
-		 int sum=23;
+		 int sum=33;
 		 subArrayGivenSum(array, sum);
-		 subArrayWithGivenSum(array, sum);
+		// subArrayWithGivenSum(array, sum);
 		//subArrayGivenSumUsingMap(array, sum);
 	}
 }

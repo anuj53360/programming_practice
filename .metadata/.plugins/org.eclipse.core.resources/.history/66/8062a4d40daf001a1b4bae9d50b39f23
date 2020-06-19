@@ -75,7 +75,7 @@ public class SubArrayGivenSum {
 		//int sum = -10;
 		 int sum=23;
 		 subArrayGivenSum(array, sum);
-		 subArrayWithGivenSum(array, sum);
+		// subArrayWithGivenSum(array, sum);
 		//subArrayGivenSumUsingMap(array, sum);
 	}
 }

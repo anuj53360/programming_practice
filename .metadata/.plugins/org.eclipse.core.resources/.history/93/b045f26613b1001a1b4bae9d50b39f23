@@ -1,0 +1,15 @@
+package anuj_array_geeksforgeeks;
+
+public class SmallestSubArray {
+//find smallest subarray with greater than given sum
+	
+	
+	public static void smallestSubArray() {
+		
+	}
+	
+	
+	public static void main(String[] args) {
+		
+	}
+}
