@@ -1,0 +1,21 @@
+package binarytree;
+
+public class ConstructBSTFromPreorder {
+
+	class Node {
+		int val;
+		Node left;
+		Node right;
+
+		Node(int val) {
+			this.val = val;
+			left = null;
+			right = null;
+		}
+	}
+
+	public static void main(String[] args) {
+
+		int[] array = { 10, 5, 1, 7, 40, 50 };
+	}
+}

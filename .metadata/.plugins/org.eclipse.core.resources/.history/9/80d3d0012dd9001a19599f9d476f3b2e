@@ -1,0 +1,38 @@
+package anuj_array_geeksforgeeks;
+
+public class SortZeroOneTwo {
+
+	public static void sortZeroOne(int[] array) {
+
+		int zero=0;
+		int one=0;
+		int two=array.length;
+		int temp=0;
+		while(one<two) {
+			switch (array[one]) {
+			case 0:
+				   temp=array[zero];
+				   array[zero]=array[one];
+				   array[one]=temp;				
+				   zero++;
+				   one++;
+				   break;
+
+			case 1:
+				one++;
+				
+			default:
+				break;
+			}
+		}
+		
+		
+		
+	}
+
+	public static void main(String[] args) {
+		int[] array = { 0, 1, 1, 0, 1, 2, 1, 2, 0, 0, 0, 1 };
+	    sortZeroOne(array);
+	
+	}
+}

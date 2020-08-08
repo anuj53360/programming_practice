@@ -1,0 +1,21 @@
+package anuj_array_geeksforgeeks;
+
+public class LongestCommonPrefixTrie {
+
+	static final int ALPHABET_SIZE=26;
+	class TrieNode{
+		TrieNode []array=new TrieNode[ALPHABET_SIZE];
+		
+		public TrieNode() {
+			// TODO Auto-generated constructor stub
+		}
+	}
+	
+	public static void main(String[] args) {
+		String []array= {"geeksforgeeks", "geeks", 
+                "geek", "geezer"};
+		
+		
+		
+	}
+}

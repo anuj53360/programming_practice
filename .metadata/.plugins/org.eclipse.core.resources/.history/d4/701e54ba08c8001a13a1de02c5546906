@@ -1,0 +1,52 @@
+package binarytree;
+
+public class ShortestDistanceBwTwoNodes {
+
+	class Node {
+		int val;
+		Node left;
+		Node right;
+
+		Node(int val) {
+			this.val = val;
+			left = null;
+			right = null;
+		}
+	}
+
+	Node root;
+
+	public int distancebwtwoNode(Node root, int a, int b) {
+		int temp = 0;
+
+		if (a > b) {
+			temp = a;
+			a = b;
+			b = temp;
+		}
+		distancebwtwoNodes(root, a, b);
+		return b;
+	}
+
+	private void distancebwtwoNodes(Node root, int a, int b) {
+
+
+	
+	}
+
+	public static void main(String[] args) {
+
+		ShortestDistanceBwTwoNodes shn = new ShortestDistanceBwTwoNodes();
+		shn.root = shn.new Node(5);
+		shn.root.left = shn.new Node(2);
+		shn.root.right = shn.new Node(12);
+		shn.root.left.left = shn.new Node(1);
+		shn.root.left.right = shn.new Node(3);
+		shn.root.right.left = shn.new Node(9);
+		shn.root.right.right = shn.new Node(21);
+		shn.root.right.right.left = shn.new Node(19);
+		shn.root.right.right.left = shn.new Node(25);
+
+		shn.distancebwtwoNode(shn.root, 3, 9);
+	}
+}

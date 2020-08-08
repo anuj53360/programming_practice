@@ -1,0 +1,9 @@
+package anuj_array_geeksforgeeks;
+
+public class LongestSubStringConsecutiveCharacter {
+
+	
+	public static void main(String[] args) {
+		String str="zabcd";
+	}
+}

@@ -1,0 +1,29 @@
+package anuj_array_geeksforgeeks;
+
+public class LongestSubStringConsecutiveCharacter {
+
+	public static void longestSubString(String str) {
+		int count = 1;
+		int maxcount = 0;
+		for (int i = 1; i < str.length(); i++) {
+			if (str.charAt(i) - str.charAt(i - 1) == 1) {
+				count++;
+				System.out.println(str.charAt(i) - str.charAt(i - 1) + " AAAAAAAAA" + count);
+			}
+
+			else {
+				count = 1;
+			}
+			if (count > maxcount)
+				maxcount = count;
+		}
+
+		System.out.println(maxcount);
+
+	}
+
+	public static void main(String[] args) {
+		String str = "abcabcdefabc";
+		longestSubString(str);
+	}
+}

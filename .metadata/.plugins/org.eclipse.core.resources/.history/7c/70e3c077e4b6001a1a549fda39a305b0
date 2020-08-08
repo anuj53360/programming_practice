@@ -1,0 +1,10 @@
+package anuj_array_geeksforgeeks;
+
+public class LongestCommonPrefixTrie {
+
+	
+	public static void main(String[] args) {
+		String []array= {"geeksforgeeks", "geeks", 
+                "geek", "geezer"};
+	}
+}

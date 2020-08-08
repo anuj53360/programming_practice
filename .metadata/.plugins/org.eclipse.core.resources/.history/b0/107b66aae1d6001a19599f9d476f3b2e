@@ -1,0 +1,10 @@
+package java_practice;
+
+public class Practice2 {
+
+	
+	public static void main(String[] args) {
+		String a=new String("A"); 
+	}
+	
+}

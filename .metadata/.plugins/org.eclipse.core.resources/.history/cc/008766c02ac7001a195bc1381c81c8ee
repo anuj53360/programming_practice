@@ -1,0 +1,57 @@
+package binarytree;
+
+public class DLLFromBTLeaf {
+
+	class Node {
+		int val;
+		Node left;
+		Node right;
+
+		Node(int val) {
+			this.val = val;
+			left = null;
+			right = null;
+		}
+	}
+
+	Node root;
+	Node head;
+	Node prev;
+	
+	
+	Node leafToDll(Node root) {
+		
+		if(root==null)
+			return null;
+		
+		if(root.left==null && root.right==null)
+		{
+			if(head==null) {
+				head=root;
+				prev=root;
+			}
+			else {
+				prev.right=root;
+				root.left=prev;
+				prev=root;
+			}
+			return null;
+		}
+		root.left=leafToDll(root.left);
+		root.right=leafToDll(root.right);
+			
+				
+		
+		
+		
+		
+		
+		return head;
+	}
+	
+	
+     public static void main(String[] args) {
+		
+	}	
+
+}

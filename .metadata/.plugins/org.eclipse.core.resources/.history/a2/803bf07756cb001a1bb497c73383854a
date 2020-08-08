@@ -1,0 +1,39 @@
+package leetcode;
+
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.List;
+
+public class ThreeSum {
+
+	List<List<Integer>> list = new ArrayList<List<Integer>>();
+
+	public List<List<Integer>> threeSum(int[] nums) {
+
+		for (int i = 0; i < nums.length - 1; i++) {
+			List<Integer> list1 = new ArrayList<>();
+			HashSet<Integer> s = new HashSet<Integer>();
+			for (int j = i + 1; j < nums.length; j++) {
+
+				int x = -(nums[i] + nums[j]);
+				if (s.contains(x)) {
+					System.out.printf("%d %d %d\n", x, nums[i], nums[j]);
+					list1.add(x);
+					list1.add(nums[i]);
+					list1.add(nums[j]);
+				} else {
+					s.add(nums[j]);
+				}
+
+			}
+			list.add(list1);
+
+		}
+
+		return list;
+	}
+
+	public static void main(String[] args) {
+		int[] arr = { -1, 0, 1, 2, -1, -4 };
+	}
+}

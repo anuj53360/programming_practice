@@ -1,0 +1,37 @@
+package binarytree;
+
+public class SubTreeOfAnotherTree {
+
+	class TreeNode {
+		int val;
+		TreeNode left;
+		TreeNode right;
+
+		TreeNode(int val) {
+			this.val = val;
+			left = null;
+			right = null;
+		}
+	}
+
+	TreeNode root;
+
+	public boolean isSubtree(TreeNode s, TreeNode t) {
+
+	}
+
+	public static void main(String[] args) {
+		SubTreeOfAnotherTree atat = new SubTreeOfAnotherTree();
+		atat.root=atat.new TreeNode(3);
+		atat.root.left=atat.new TreeNode(4);
+		atat.root.right=atat.new TreeNode(5);
+		atat.root.left.left=atat.new TreeNode(1);
+		atat.root.left.right=atat.new TreeNode(2);
+		
+		SubTreeOfAnotherTree atat1 = new SubTreeOfAnotherTree();
+		atat1.root=atat1.new TreeNode(4);
+		atat1.root.left=atat1.new TreeNode(1);
+		atat1.root.right=atat1.new TreeNode(2);
+		
+	}
+}

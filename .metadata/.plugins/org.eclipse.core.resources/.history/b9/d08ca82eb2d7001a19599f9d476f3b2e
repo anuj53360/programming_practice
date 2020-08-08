@@ -1,0 +1,39 @@
+package anuj_array_geeksforgeeks;
+
+public class BinaryArraySorting {
+
+	public static void binaryArraySorting(int[] array) {
+
+		int one = 1;
+		int zero = 0;
+
+		for (int i = 0; i < array.length-1; i++) {
+          if(array[zero]!=0) {
+        	  if(array[one]==1) {
+        	  int x=array[one];
+        	  array[one]=array[zero];
+        	  array[zero]=array[one];
+        	  zero++;
+        	  one++;
+        	  }else {
+        		  while(array[one]!=1) {
+        			  one++;
+        		  }
+        	  }
+          }else {
+        	  zero++;
+          }
+		}
+		
+		
+		for (int i = 0; i < array.length; i++) {
+			System.out.println(array[i]);
+		}
+
+	}
+
+	public static void main(String[] args) {
+		int[] array = { 1, 0, 1, 1, 1, 1, 1, 0, 0, 0 };
+		binaryArraySorting(array);
+	}
+}

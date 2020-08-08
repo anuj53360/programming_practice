@@ -1,31 +1,53 @@
 package leetcode;
 
+import java.util.HashSet;
+
 public class LongestSubStringWithoughtRepeatingChar {
-    
-	
-	public static int longestSubString(String string){
-		int []intarray=new int[26];
-		String result="";
-		int i=0;
-		int j=0;
-		while(i<string.length() && j<string.length()) {
-			if(intarray[string.charAt(i)-'a']==0) {
-				//System.out.println(intarray[string.charAt(i)-'a']);
-			result+=string.charAt(i);
-			System.out.println(result);
-			intarray[string.charAt(i)-'a']+=1;
-			}else {
-				intarray[string.charAt(i)-'a']+=1;
+
+	public static int longestSubString(String string) {
+		int[] intarray = new int[26];
+		String result = "";
+		int i = 0;
+		int j = 0;
+		while (i < string.length() && j < string.length()) {
+			if (intarray[string.charAt(i) - 'a'] == 0) {
+				// System.out.println(intarray[string.charAt(i)-'a']);
+				result += string.charAt(i);
+				System.out.println(result);
+				intarray[string.charAt(i) - 'a'] += 1;
+			} else {
+				intarray[string.charAt(i) - 'a'] += 1;
 				j++;
-			result="";
+				result = "";
 			}
 			i++;
 		}
 		return 0;
 	}
-	
+
+	public int lengthOfLongestSubstring(String s) {
+
+		HashSet<Character> set = new HashSet<>();
+		int ans = 0;
+		int i = 0;
+		int j = 0;
+
+		while (i < s.length() && j < s.length()) {
+
+			if (!set.contains(s.charAt(j))) {
+				set.add(s.charAt(j++));
+				ans = Math.max(ans, j - i);
+			} else {
+				set.remove(s.charAt(i++));
+			}
+
+		}
+
+		return ans;
+	}
+
 	public static void main(String[] args) {
-		String string="pwwkew";
+		String string = "pwwkew";
 		longestSubString(string);
 	}
 }

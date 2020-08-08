@@ -1,0 +1,10 @@
+package binarytree;
+
+public class MinDepthBinaryTree {
+
+	
+	
+	public static void main(String[] args) {
+		
+	}
+}

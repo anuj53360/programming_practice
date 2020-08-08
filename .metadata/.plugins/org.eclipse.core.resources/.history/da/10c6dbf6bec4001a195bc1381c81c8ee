@@ -1,0 +1,23 @@
+package binarytree;
+
+public class PostOrderTraversalIterative {
+
+	class Node {
+		int val;
+		Node left;
+		Node right;
+
+		Node(int val) {
+			this.val = val;
+			left = null;
+			right = null;
+		}
+	}
+	
+	    Node root;
+
+	public static void main(String[] args) {
+		PostOrderTraversalIterative postorder = new PostOrderTraversalIterative();
+
+	}
+}

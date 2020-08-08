@@ -1,0 +1,13 @@
+package anuj_array_geeksforgeeks;
+
+public class KthSmallestUsingPriority {
+
+	public static void int kthSmallest() {
+		
+	}
+	
+	public static void main(String[] args) {
+		
+		int [] array= {7 ,10, 4, 3, 20, 15};
+	}
+}

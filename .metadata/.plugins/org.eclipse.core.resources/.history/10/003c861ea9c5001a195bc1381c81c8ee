@@ -1,0 +1,41 @@
+package binarytree;
+
+import java.util.Stack;
+
+public class ExpressionTree {
+
+	class Node {
+		int val;
+		Node left;
+		Node right;
+
+		Node(int val) {
+			this.val = val;
+			left = null;
+			right = null;
+		}
+	}
+	
+	Node constructTreeExpression(char []chararray) {
+		
+		Stack<Node> stack=new Stack<>();
+		Node t,t1,t2;
+		
+		
+		
+		
+		
+		return null;
+		
+	}
+	
+	
+     public static void main(String[] args) {
+		ExpressionTree tree=new ExpressionTree();
+    	 String expression="ab+ef*g*-";
+		char []chararray=expression.toCharArray();
+		tree.constructTreeExpression(chararray);
+		
+		
+	}
+}

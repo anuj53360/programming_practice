@@ -20,5 +20,7 @@ public class Practice {
 		//LinkedHashMap<Integer, Integder>
 	//HashSet<Inteeeger>
 		
+		HashMap<Integer, Integer> map=new HashMap<>();
+		
 	}
 }

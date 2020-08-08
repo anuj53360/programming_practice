@@ -1,0 +1,53 @@
+package anuj_array_geeksforgeeks;
+
+import java.util.Arrays;
+
+public class InversionCount {
+
+	public static int inversionCount(int []array,int l,int r) {
+		int count=0;
+		if(l<r) {
+	     int mid=l+r/2;
+			
+	     count+=inversionCount(array,l,mid);
+			count+=inversionCount(array,mid+1,r);
+			count+=inversionCountMerge(array,l,mid,r);
+		}
+		return count;
+	}
+	
+	
+	public static int inversionCountMerge(int []array,int l,int mid,int r){
+		int []left=Arrays.copyOfRange(array, l, mid+1);
+		int []right=Arrays.copyOfRange(array, mid+1, r);
+		
+		int i=0;int j=0; int k=l;
+		int swap=0;
+		
+		while(i<left.length && j<right.length) {
+			if(left[i]<=right[j]) {
+				array[k++]=left[i++];
+			}else {
+				array[k++]=right[j++];
+				swap+=(mid+1)-(l+i);		
+			}
+		}
+
+		while(i<left.length) {
+			array[k++]=left[i++];
+		}
+		while(j<right.length) {
+			array[k++]=right[j++];
+		}
+		
+		
+		
+		return swap;
+	}
+	
+	public static void main(String[] args) {
+		int []array= {1,20,6,4,5}; 
+		int count=inversionCount(array,0,array.length-1);
+	    System.out.println(count);
+	}
+}

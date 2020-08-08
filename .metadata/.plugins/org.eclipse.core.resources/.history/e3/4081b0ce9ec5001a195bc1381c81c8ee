@@ -1,0 +1,17 @@
+package binarytree;
+
+public class ExpressionTree {
+
+	class Node {
+		int val;
+		Node left;
+		Node right;
+
+		Node(int val) {
+			this.val = val;
+			left = null;
+			right = null;
+		}
+	}
+
+}

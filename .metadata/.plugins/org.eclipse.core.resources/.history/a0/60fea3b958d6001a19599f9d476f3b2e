@@ -1,0 +1,8 @@
+package programmingpractice_programs;
+
+class Dear {
+
+	public void play() {
+		System.out.println("AAAAAA");
+	}
+}

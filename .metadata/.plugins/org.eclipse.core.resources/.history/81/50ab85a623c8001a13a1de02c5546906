@@ -1,0 +1,22 @@
+package binarytree;
+
+public class SubTreeOfAnotherTree {
+
+	class TreeNode {
+		int val;
+		TreeNode left;
+		TreeNode right;
+
+		TreeNode(int val) {
+			this.val = val;
+			left = null;
+			right = null;
+		}
+	}
+
+	TreeNode root;
+
+	public static void main(String[] args) {
+		SubTreeOfAnotherTree atat = new SubTreeOfAnotherTree();
+	}
+}

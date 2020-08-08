@@ -1,0 +1,18 @@
+package leetcode;
+
+public class IncreasingTriplet {
+
+	
+	public boolean increasingTriplet(int[] nums) {
+        if(nums.length<3){
+            return false;
+        }
+        
+        int a=Integer.MAX_VALUE;
+        int b=Integer.MIN_VALUE;
+    }
+	
+	public static void main(String[] args) {
+		
+	}
+}

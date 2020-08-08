@@ -1,0 +1,45 @@
+package anuj_array_geeksforgeeks;
+
+public class LongestCommonPrefixTrie {
+
+	static final int ALPHABET_SIZE = 26;
+
+	class TrieNode {
+		TrieNode[] array = new TrieNode[ALPHABET_SIZE];
+		boolean isend;
+
+		public TrieNode() {
+			for (int i = 0; i < ALPHABET_SIZE; i++) {
+				array[i] = null;
+			}
+			isend = false;
+		}
+	}
+
+	static TrieNode root;
+
+	public static void main(String[] args) {
+		String[] array = { "geeksforgeeks", "geeks", "geek", "geezer" };
+		int n = array.length;
+		commonPrefix(array, n);
+	}
+
+	private static void commonPrefix(String[] array, int n) {
+		for (int i = 0; i < n; i++) {
+			contructTrie(array[i]);
+		}
+	}
+
+	private static void contructTrie(String string) {
+		int index = 0;
+		TrieNode temp = root;
+		for (int i = 0; i < string.length(); i++) {
+			index = string.charAt(i) - 'a';
+			if (temp.array[index] == null) {
+				temp.array[index] = new TrieNode();
+			}
+			temp = temp.array[index];
+		}
+    temp.isend=true;
+	}
+}

@@ -1,6 +1,8 @@
 package anuj_array_geeksforgeeks;
 
 import java.util.Arrays;
+import java.util.LinkedHashSet;
+import java.util.TreeSet;
 
 public class InversionCount {
 
@@ -49,5 +51,6 @@ public class InversionCount {
 		int []array= {1,20,6,4,5}; 
 		int count=inversionCount(array,0,array.length-1);
 	    System.out.println(count);
+	 
 	}
 }

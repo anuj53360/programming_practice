@@ -1,0 +1,23 @@
+package leetcode;
+
+public class MaximumSubArraySizeK {
+
+	public void maximumSubArraySizeK(int[] array, int k) {
+
+		int start = 0;
+		int end = k - 1;
+		int i=start;
+		int max=array[k-1];
+		
+		while(end<=array.length-1) {
+			
+		}
+	}
+
+	public static void main(String[] args) {
+
+		MaximumSubArraySizeK max = new MaximumSubArraySizeK();
+		int[] array = { 1, 2, 3, 1, 4, 5, 2, 3, 6 };
+		max.maximumSubArraySizeK(array, 3);
+	}
+}

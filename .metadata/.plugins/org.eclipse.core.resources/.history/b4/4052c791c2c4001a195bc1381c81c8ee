@@ -1,0 +1,32 @@
+package binarytree;
+
+import binarytree.PostOrderTraversalIterative.Node;
+
+public class PreOrderTravasalIterative {
+
+	class Node {
+		int val;
+		Node left;
+		Node right;
+
+		Node(int val) {
+			this.val = val;
+			left = null;
+			right = null;
+		}
+	}
+
+	Node root;
+	
+	
+	public static void main(String[] args) {
+		postorder.root = postorder.new Node(1);
+		postorder.root.left = postorder.new Node(2);
+		postorder.root.right = postorder.new Node(3);
+		postorder.root.left.left = postorder.new Node(4);
+		postorder.root.left.right = postorder.new Node(5);
+		postorder.root.right.left = postorder.new Node(6);
+		postorder.root.right.right = postorder.new Node(7);
+	}
+
+}

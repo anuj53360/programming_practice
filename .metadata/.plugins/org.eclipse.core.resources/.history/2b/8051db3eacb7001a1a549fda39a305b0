@@ -1,0 +1,13 @@
+package anuj_array_geeksforgeeks;
+
+public class FindTripletSumEqualZero {
+
+	public static void findTripletSum() {
+
+	}
+
+	public static void main(String[] args) {
+		int[] array = { 0, -1, 2, -3, 1 };
+	findTripletSum(array);
+	}
+}
