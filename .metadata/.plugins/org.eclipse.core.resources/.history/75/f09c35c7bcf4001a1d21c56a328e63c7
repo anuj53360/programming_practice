@@ -1,0 +1,18 @@
+package leetcode;
+
+public class ShuffleArray {
+
+	public int[] shuffle(int[] nums, int n) {
+		
+		
+		
+		
+		return nums;
+	}
+	
+	
+	public static void main(String[] args) {
+		
+	}
+
+}

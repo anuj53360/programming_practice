@@ -2,7 +2,7 @@ package anuj_array_geeksforgeeks;
 
 public class MedianTwoSortedArray {
 
-	public static void medianTwoSorted(int[] array1, int[] array2) {
+	public static double medianTwoSorted(int[] array1, int[] array2) {
 		int length1=array1.length;
 		int length2=array2.length;
 		int index=0;
@@ -33,19 +33,17 @@ public class MedianTwoSortedArray {
 			j++;
 		}
 		
-		getMedian(temp);
+	return	getMedian(temp);
 	}
 	
-	private static int getMedian(int[] temp) {
+	private static double getMedian(int[] temp) {
 		
 		int length=temp.length;
 		if(length%2==0) {
-			return temp[(length-1)/2]+temp[(length-1)/2+1]/2;
+			return (double)temp[(length-1)/2]+temp[(length-1)/2+1]/2;
 		}else {
 			return temp[(length-1)/2];
 		}
-		
-		
 		
 	}
 

@@ -24,7 +24,6 @@
     <fullyQualifiedTypeName name="java.lang.FdLibm.Pow"/>
     <fullyQualifiedTypeName name="java_practice.Parent"/>
     <fullyQualifiedTypeName name="java_practice.Child"/>
-    <fullyQualifiedTypeName name="java.lang.Math"/>
     <fullyQualifiedTypeName name="java.util.Vector"/>
     <fullyQualifiedTypeName name="java.time.LocalDate"/>
     <fullyQualifiedTypeName name="java.util.TreeMap"/>
@@ -46,10 +45,16 @@
     <fullyQualifiedTypeName name="java.util.PriorityQueue"/>
     <fullyQualifiedTypeName name="java.util.Collection"/>
     <fullyQualifiedTypeName name="java.util.Collections"/>
-    <fullyQualifiedTypeName name="java.util.List"/>
-    <fullyQualifiedTypeName name="java.lang.Integer"/>
-    <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="leetcode.SetMatrixZeroes"/>
     <fullyQualifiedTypeName name="java.util.HashSet"/>
+    <fullyQualifiedTypeName name="java.util.LinkedHashSet"/>
     <fullyQualifiedTypeName name="java.util.Arrays"/>
+    <fullyQualifiedTypeName name="java_practice.Medicine"/>
+    <fullyQualifiedTypeName name="java.lang.Integer"/>
+    <fullyQualifiedTypeName name="java.lang.Object"/>
+    <fullyQualifiedTypeName name="java_practice.Practice4"/>
+    <fullyQualifiedTypeName name="java_practice.Practice3"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="java.lang.Math"/>
 </qualifiedTypeNameHistroy>

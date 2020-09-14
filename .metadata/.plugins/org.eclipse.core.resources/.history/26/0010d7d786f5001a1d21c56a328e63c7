@@ -1,0 +1,12 @@
+package leetcode;
+
+public class MaximumProductSubArray {
+
+	public static int maxProduct(int[] nums) {
+
+	}
+
+	public static void main(String[] args) {
+
+	}
+}

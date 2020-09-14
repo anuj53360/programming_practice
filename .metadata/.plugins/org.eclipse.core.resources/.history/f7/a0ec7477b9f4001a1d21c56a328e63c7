@@ -1,0 +1,16 @@
+package leetcode;
+
+public class RunningSum1dArray {
+
+	public static int[] runningSum(int[] nums) {
+		return nums;
+
+	}
+
+	public static void main(String[] args) {
+        
+		int []nums= {1,2,3,4};
+		runningSum(nums);
+	}
+
+}

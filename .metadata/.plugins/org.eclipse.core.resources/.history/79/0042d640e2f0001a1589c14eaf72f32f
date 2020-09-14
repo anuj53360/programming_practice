@@ -1,0 +1,12 @@
+package leetcode;
+
+public class LongestValidParenthesis {
+
+	public static int longestValidParentheses(String s) {
+
+	}
+
+	public static void main(String[] args) {
+
+	}
+}

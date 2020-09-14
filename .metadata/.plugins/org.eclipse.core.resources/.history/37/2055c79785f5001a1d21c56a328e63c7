@@ -1,0 +1,18 @@
+package leetcode;
+
+public class ShortestSubArrayRemoved {
+
+	public static int findLengthOfShortestSubarray(int[] arr) {
+		
+		
+		
+		
+		return 0;
+
+	}
+
+	public static void main(String[] args) {
+      int []arr= {1,2,3,10,4,2,3,5};
+		findLengthOfShortestSubarray(arr);
+	}
+}

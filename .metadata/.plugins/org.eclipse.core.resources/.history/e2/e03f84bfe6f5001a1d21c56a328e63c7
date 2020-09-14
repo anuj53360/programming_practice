@@ -1,0 +1,12 @@
+package leetcode;
+
+public class SearchInRotatedSortedArray {
+
+	public static int search(int[] nums, int target) {
+
+	}
+
+	public static void main(String[] args) {
+
+	}
+}

@@ -1,0 +1,16 @@
+package dynamicprogramming;
+
+public class ClimbingStairs {
+
+	public static int climbStairs(int n) {
+
+		
+		
+		return 0;
+	}
+
+	public static void main(String[] args) {
+    int n=3;
+		climbStairs(n);
+	}
+}

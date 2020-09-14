@@ -1,0 +1,14 @@
+package anuj_array_geeksforgeeks;
+
+public class ThreeSumClosest {
+
+	public int threeSumClosest(int[] nums, int target) {
+
+	}
+
+	public static void main(String[] args) {
+
+		int []nums= {-1,2,1,-4};
+		
+	}
+}

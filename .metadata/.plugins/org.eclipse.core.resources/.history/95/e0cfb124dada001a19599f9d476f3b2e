@@ -1,0 +1,27 @@
+package anuj_array_geeksforgeeks;
+
+public class ThreeSumClosest {
+
+	public static int threeSumClosest(int[] nums, int target) {
+
+		int closestSum = Integer.MAX_VALUE;
+
+		for (int i = 0; i < nums.length; i++) {
+			int j = i + 1;
+			int last = nums.length - 1;
+
+			while (j < last) {
+
+			}
+		}
+
+		return target;
+	}
+
+	public static void main(String[] args) {
+
+		int[] nums = { -1, 2, 1, -4 };
+		int target = 1;
+		threeSumClosest(nums, target);
+	}
+}

@@ -14,11 +14,17 @@ public class RotateImage {
 		
 		int n=matrix.length;
 		for (int i = 0; i < matrix.length; i++) {
-			for (int j = 0; j < matrix.length/2; j++) {
-				int temp=matrix[i][j];
-				matrix[i][j]=matrix[i][n-1-j];
-				matrix[i][n-1-j]=temp;
-			}
+//			for (int j = 0; j < matrix.length/2; j++) {
+//				int temp=matrix[i][j];
+//				matrix[i][j]=matrix[i][n-1-j];
+//				matrix[i][n-1-j]=temp;
+//			}
+			int j=0;
+			int k=n-1;
+			
+			int temp=matrix[i][j];
+			matrix[i][j]=matrix[i][k];
+			matrix[i][k]=temp;
 		}
 		
 		

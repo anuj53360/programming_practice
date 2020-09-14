@@ -1,0 +1,33 @@
+package leetcode;
+
+public class ShortestSubArrayRemoved {
+
+	public static int findLengthOfShortestSubarray(int[] arr) {
+
+		int n = arr.length;
+		int left = 0;
+		int right = n - 1;
+
+		while (left < n && arr[left] <= arr[left + 1]) {
+			left++;
+			if (left == n - 1) {
+				return 0;
+			}
+		}
+
+		while (right > 0 && arr[right] >= arr[right - 1]) {
+			right--;
+			if (right == 0) {
+				return 0;
+			}
+		}
+
+		return 0;
+
+	}
+
+	public static void main(String[] args) {
+		int[] arr = { 1, 2, 3, 10, 4, 2, 3, 5 };
+		findLengthOfShortestSubarray(arr);
+	}
+}

@@ -1,0 +1,29 @@
+package leetcode;
+
+public class ShuffleArray {
+
+	public static int[] shuffle(int[] nums, int n) {
+        
+		int []temp=new int[nums.length];
+		
+		int i=0;
+		int j=n;
+		
+		while(i<n && j<nums.length) {
+			temp[i]=nums[i];
+			temp[i+1]=nums[j];
+			i++;
+			j++;
+		}
+		
+		
+		return temp;
+	}
+
+	public static void main(String[] args) {
+		int[] nums = { 1, 2, 3, 4, 4, 3, 2, 1 };
+		int n = 4;
+		shuffle(nums, n);
+	}
+
+}

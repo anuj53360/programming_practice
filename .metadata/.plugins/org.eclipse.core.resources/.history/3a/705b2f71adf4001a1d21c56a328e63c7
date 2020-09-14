@@ -1,0 +1,15 @@
+package leetcode;
+
+public class CountNoOfTems {
+
+	public static int numTeams(int[] rating) {
+		return 0;
+
+	}
+
+	public static void main(String[] args) {
+
+		int[] rating = {2,5,3,4,1};
+		numTeams(rating);
+	}
+}

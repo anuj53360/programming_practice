@@ -1,0 +1,20 @@
+package leetcode;
+
+import java.util.Stack;
+
+public class LongestValidParenthesis {
+
+	public static int longestValidParentheses(String s) {
+		
+		Stack<Integer> stack=new Stack<>();
+		int []helper=new int[s.length()]; 
+		
+		return 0;
+
+	}
+
+	public static void main(String[] args) {
+     String s=")()())";
+		longestValidParentheses(s);
+	}
+}

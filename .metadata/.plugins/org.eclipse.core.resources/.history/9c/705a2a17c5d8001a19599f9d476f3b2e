@@ -1,9 +1,0 @@
-package anuj_array_geeksforgeeks;
-
-public class SortZeroOneTwo {
-
-	
-	public static void main(String[] args) {
-		int []array= {0, 1, 1, 0, 1, 2, 1, 2, 0, 0, 0, 1};
-	}
-}

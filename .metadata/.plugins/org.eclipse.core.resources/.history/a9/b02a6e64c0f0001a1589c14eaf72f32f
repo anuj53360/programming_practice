@@ -1,0 +1,14 @@
+package dynamicprogramming;
+
+public class RegularExpressionMatching {
+
+	public static boolean isMatch(String s, String p) {
+
+	}
+
+	public static void main(String[] args) {
+        String s="mississippi";
+        String p="mis*is*p*.";
+		isMatch(s, p);
+	}
+}
