@@ -1,4 +1,4 @@
-package anuj_array_geeksforgeeks;
+package programmingpractice.src.anuj_array_geeksforgeeks;
 
 import java.util.HashMap;
 import java.util.Map.Entry;
@@ -48,6 +48,6 @@ public boolean containsDuplicate(int[] nums) {
 	public static void main(String[] args) {
 		int n=3;
 		int k=51;
-		dictionaryProblemHackerearth(n,k);
+		//dictionaryProblemHackerearth(n,k);
 	}
 }

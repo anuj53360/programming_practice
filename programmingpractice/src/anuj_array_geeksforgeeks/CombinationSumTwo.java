@@ -1,4 +1,4 @@
-package anuj_array_geeksforgeeks;
+package programmingpractice.src.anuj_array_geeksforgeeks;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -44,6 +44,6 @@ public class CombinationSumTwo {
 	public static void main(String[] args) {
 		int[] nums = { 10, 1, 2, 7, 6, 1, 5 };
 		int target = 8;
-		combinationSum2(nums, target);
+		//combinationSum2(nums, target);
 	}
 }

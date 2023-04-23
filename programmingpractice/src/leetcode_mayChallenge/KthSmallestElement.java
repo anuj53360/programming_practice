@@ -1,4 +1,4 @@
-package leetcode_mayChallenge;
+package programmingpractice.src.leetcode_mayChallenge;
 
 import java.util.concurrent.atomic.AtomicInteger;
 
@@ -49,7 +49,7 @@ public class KthSmallestElement {
 		smallest.root.left.right = smallest.new TreeNode(4);
 		smallest.root.right = smallest.new TreeNode(5);
 
-		smallest.kthSmallest(smallest.root);
+		//smallest.kthSmallest(smallest.root);
 
 	}
 }
