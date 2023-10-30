@@ -3,6 +3,7 @@ package programmingpractice.src.practice2023;
 import java.util.*;
 
 public class Main {
+  static   int []arr = {5,0,2,0,0,3,7,0,6};
 
     public static  void splitName(List<String> fullName){
 
@@ -66,17 +67,52 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Main main = new Main();
-       // main.m1( 1,1);
+//        Main main = new Main();
+//       // main.m1( 1,1);
+//
+//int [] array ={14, 0, 34, 0, 0, 16, 22, 0, 56, 0, 17};
+//        moveZeroesToLast(array);
+//
+//        splitName(Arrays.asList("Rohit Kholi" ,
+//                "Virat Kholi",
+//                "Varun Sharma",
+//                "Ajay Sharma",
+//                "SuryaKumay Yadav"));
 
-int [] array ={14, 0, 34, 0, 0, 16, 22, 0, 56, 0, 17};
-        moveZeroesToLast(array);
 
-        splitName(Arrays.asList("Rohit Kholi" ,
-                "Virat Kholi",
-                "Varun Sharma",
-                "Ajay Sharma",
-                "SuryaKumay Yadav"));
 
+//        for (int i :arr) {
+//            System.out.print(i);
+ //       }
+        int left =0;
+        int right = 0;
+        while(right< arr.length-1){
+
+            if(arr[right]!=0){
+                swap(arr , left , right);
+                right++;
+                left++;
+            }
+            if(arr[right] ==0){
+                right++;
+            }
+            System.out.println(left + " "+right+ " "+arr[left] + " "+ arr[right]);
+        }
+
+
+        for (int i:arr) {
+            System.out.print(i);
+        }
+
+    }
+
+
+
+
+    private static void swap(int[] arr, int left, int right) {
+    int temp =0;
+     arr[left] = temp;
+     arr[left] = arr[right];
+     arr[right] = temp;
     }
 }
